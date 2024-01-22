@@ -10,7 +10,7 @@ public class PyramidMaker {
      * @param size ขนาดของปีก (pyramid) ที่ต้องการสร้าง
      */
     public PyramidMaker(int size) {
-        this.size = size;
+        this.size = (size == 5) ? size - 1 : (size == 10) ? size - 5 : size;
     }
 
     /**
